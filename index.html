@@ -1,33 +1,25 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset='UTF-8'/>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-  <meta http-equiv='X-UA-Compatible' content='ie=edge'/>
-  <title>Document</title>
-  <script src='js/index.js'></script>
-  <link rel='stylesheet' href='index.css'/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub User Search</title>
 </head>
+
 <body>
-  <div id='main'>
+  <h1>GitHub User Search</h1>
 
-    <h2>GitHub Search</h2>
+  <form id="search-form">
+    <input type="text" id="search-input" placeholder="Enter username or repo" required />
+    <button type="submit">Search</button>
+    <button type="button" id="toggle-search">Toggle User/Repo</button>
+  </form>
 
-    <form id='github-form'>
-      <input id='search' type='text' name='search'>
-      <input type='submit' name='submit'/>
-    </form>
+  <div id="search-results"></div>
+  <div id="repo-results"></div>
 
-    <div id='github-container'>
-      <ul id='user-list'>
-
-      </ul>
-
-      <ul id='repos-list'>
-
-      </ul>
-    </div>
-
-  </div>
-
+  <script src="js/index.js"></script>
 </body>
+
 </html>
